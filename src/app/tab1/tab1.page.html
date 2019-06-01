@@ -1,41 +1,156 @@
-<ion-header>
+<ion-header class="ion-padding-horizontal">
   <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+   <ion-icon slot="start" name="arrow-dropleft" size="large"></ion-icon>
+   <div class="ion-text-center">
+      <ion-title>
+      <h3>Wurmtest</h3>
+      </ion-title>
+    </div>
+    <ion-thumbnail slot="end">
+      <ion-img src="/assets/icon.png"></ion-img>
+    </ion-thumbnail>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
+    <ion-list lines="none" class="timeline">
+      <ion-item class="timeline-event">
+        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
+        <ion-text>
+          <div class="timeline-event-copy">
+            <h4 class="timeline-event-thumbnail">Probenbox aktiviert</h4>
+            <p class="">
+              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
+              <span class="bold-text">Pet name</span> verknUpft. 
+              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
+            </p>
+          </div>
+        </ion-text>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
+
+      <ion-item class="timeline-event">
+        <ion-icon slot="start" name="star" size="small" class="timeline-event-icon red-icon"></ion-icon>
+        <div class="timeline-event-copy">
+          <ion-list lines="none">
+            <p class="bold-text timeline-event-thumbnail">
+              Bevor du die Probenbox zu uns ins Labor schicken kannst, musst du folgendes tun:
+            </p>
+            <ion-item>
+              <ion-icon slot="start" name="cloud-circle" size="large"></ion-icon>
+              <p>
+                Sammele drei Pro ben an drei aufeinanderfolgenden Tagen and achte darauf, 
+                dass jede Probe mindestens <span class="bold-text">walnussgroB</span> ist. 
+              </p>
+            </ion-item>
+            <ion-item>
+              <ion-icon slot="start" name="snow" size="large"></ion-icon>
+              <p>
+                Lagere die drei ProbendOschen <span class="bold-text">gekiihlt</span> in der Probenbox bis du sie an uns verschickst.
+              </p>
+            </ion-item>
+            <ion-item>
+              <ion-icon slot="start" name="bonfire" size="large"></ion-icon>
+              <p>
+                VerschlieBe die vorfrankierte Probenbox mit den Klebestreifen und 
+                schicke sie als GroBbrief an unser Labor - verschicke sie idealerweise 
+                zwischen <span class="bold-text">Sonntag</span> und <span class="bold-text">Mittwoch</span> damit sie nicht am Wochenende bei uns eintrifft. 
+              </p>
+            </ion-item>
+          </ion-list>
+        </div>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
+
+      <ion-item>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-card class="welcome-card">
+              <ion-card-header>
+                <ion-card-subtitle> 
+                  <span class="bold-text">Was musst man beim Sammeln beachten?</span>
+                </ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+              <ion-row>
+                <ion-col size="10">
+                  <p>
+                    Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.
+                  </p>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                </ion-col>
+              </ion-row>
+                <a class="link-color bold-text">mehr lesen</a>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+
+          <ion-item>
+            <ion-card class="welcome-card">
+              <ion-card-header>
+                <ion-card-subtitle> <span class="bold-text">Was sollte ich Ciber den Test wissen?</span></ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+              <ion-row>
+                <ion-col size="10">
+                  <p>
+                    Seinen Hund vorsorglich vor WUrmern zu schutzen, gehort zu den wichtigsten RoutinemaBnahmen in der Tiergesundheit. Ein Hund wird durch unseren Test gleich auf mehrere Verschiedene Wurmer getestet... 
+                  </p>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                </ion-col>
+              </ion-row>
+                <a class="link-color bold-text">mehr lesen</a>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-list>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
+
+
+      <ion-item class="timeline-event">
+        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
+        <ion-text>
+          <div class="timeline-event-copy">
+            <h4 class="timeline-event-thumbnail">Probenbox aktiviert</h4>
+            <p class="">
+              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
+              <span class="bold-text">Pet name</span> verknUpft. 
+              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
+            </p>
+          </div>
+        </ion-text>
+      </ion-item>
+
+      <ion-item class="timeline-event">
+        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
+        <ion-text>
+          <div class="timeline-event-copy">
+            <h4 class="timeline-event-thumbnail">Results</h4>
+            <p class="">
+              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
+              <span class="bold-text">Pet name</span> verknUpft. 
+              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
+            </p>
+          </div>
+        </ion-text>
+      </ion-item>
+
+      <ion-item class="timeline-event">
+        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
+        <ion-text>
+          <div class="timeline-event-copy">
+            <h4 class="timeline-event-thumbnail">Treatment</h4>
+            <p class="">
+              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
+              <span class="bold-text">Pet name</span> verknUpft. 
+              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
+            </p>
+          </div>
+        </ion-text>
       </ion-item>
     </ion-list>
+
+
 </ion-content>
