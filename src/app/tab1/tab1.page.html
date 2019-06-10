@@ -1,156 +1,186 @@
-<ion-header class="ion-padding-horizontal">
-  <ion-toolbar>
-   <ion-icon slot="start" name="arrow-dropleft" size="large"></ion-icon>
-   <div class="ion-text-center">
-      <ion-title>
-      <h3>Wurmtest</h3>
-      </ion-title>
-    </div>
-    <ion-thumbnail slot="end">
-      <ion-img src="/assets/icon.png"></ion-img>
-    </ion-thumbnail>
-  </ion-toolbar>
-</ion-header>
+<div class="accordion vertical">
+    <ul>
+        <li class="icon check">
+            <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+            <label for="radio-1" class="left-padding-3em">Probenbox aktiviert</label>
 
-<ion-content>
-    <ion-list lines="none" class="timeline">
-      <ion-item class="timeline-event">
-        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
-        <ion-text>
-          <div class="timeline-event-copy">
-            <h4 class="timeline-event-thumbnail">Probenbox aktiviert</h4>
-            <p class="">
-              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
-              <span class="bold-text">Pet name</span> verknUpft. 
-              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
-            </p>
-          </div>
-        </ion-text>
-      </ion-item>
+            <div class="content">
+                <p class="left-padding-3em">
+                  Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
+                  <span class="bold-text">Pet name</span> verknUpft. 
+                  In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
+                </p>
 
-      <ion-item class="timeline-event">
-        <ion-icon slot="start" name="star" size="small" class="timeline-event-icon red-icon"></ion-icon>
-        <div class="timeline-event-copy">
-          <ion-list lines="none">
-            <p class="bold-text timeline-event-thumbnail">
-              Bevor du die Probenbox zu uns ins Labor schicken kannst, musst du folgendes tun:
-            </p>
-            <ion-item>
-              <ion-icon slot="start" name="cloud-circle" size="large"></ion-icon>
-              <p>
-                Sammele drei Pro ben an drei aufeinanderfolgenden Tagen and achte darauf, 
-                dass jede Probe mindestens <span class="bold-text">walnussgroB</span> ist. 
-              </p>
-            </ion-item>
-            <ion-item>
-              <ion-icon slot="start" name="snow" size="large"></ion-icon>
-              <p>
-                Lagere die drei ProbendOschen <span class="bold-text">gekiihlt</span> in der Probenbox bis du sie an uns verschickst.
-              </p>
-            </ion-item>
-            <ion-item>
-              <ion-icon slot="start" name="bonfire" size="large"></ion-icon>
-              <p>
-                VerschlieBe die vorfrankierte Probenbox mit den Klebestreifen und 
-                schicke sie als GroBbrief an unser Labor - verschicke sie idealerweise 
-                zwischen <span class="bold-text">Sonntag</span> und <span class="bold-text">Mittwoch</span> damit sie nicht am Wochenende bei uns eintrifft. 
-              </p>
-            </ion-item>
-          </ion-list>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <ion-list lines="none">
-          <ion-item>
-            <ion-card class="welcome-card">
-              <ion-card-header>
-                <ion-card-subtitle> 
-                  <span class="bold-text">Was musst man beim Sammeln beachten?</span>
-                </ion-card-subtitle>
-              </ion-card-header>
-              <ion-card-content>
-              <ion-row>
-                <ion-col size="10">
-                  <p>
-                    Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.
+                <ion-list lines="none" class="select-list left-padding-3em">
+                  <p class="bold-text">
+                    Bevor du die Probenbox zu uns ins Labor schicken kannst, musst du folgendes tun:
                   </p>
-                </ion-col>
-                <ion-col size="2">
-                  <ion-icon name="arrow-dropright" size="large"></ion-icon>
-                </ion-col>
-              </ion-row>
-                <a class="link-color bold-text">mehr lesen</a>
-              </ion-card-content>
-            </ion-card>
-          </ion-item>
+                  <ion-item>
+                    <ion-icon slot="start" name="cloud-circle" size="large"></ion-icon>
+                    <p>
+                      Sammele drei Pro ben an drei aufeinanderfolgenden Tagen and achte darauf, 
+                      dass jede Probe mindestens <span class="bold-text">walnussgroB</span> ist. 
+                    </p>
+                  </ion-item>
+                  <ion-item>
+                    <ion-icon slot="start" name="snow" size="large"></ion-icon>
+                    <p>
+                      Lagere die drei ProbendOschen <span class="bold-text">gekiihlt</span> in der Probenbox bis du sie an uns verschickst.
+                    </p>
+                  </ion-item>
+                  <ion-item>
+                    <ion-icon slot="start" name="bonfire" size="large"></ion-icon>
+                    <p>
+                      VerschlieBe die vorfrankierte Probenbox mit den Klebestreifen und 
+                      schicke sie als GroBbrief an unser Labor - verschicke sie idealerweise 
+                      zwischen <span class="bold-text">Sonntag</span> und <span class="bold-text">Mittwoch</span> damit sie nicht am Wochenende bei uns eintrifft. 
+                    </p>
+                  </ion-item>
+                </ion-list>
 
-          <ion-item>
-            <ion-card class="welcome-card">
-              <ion-card-header>
-                <ion-card-subtitle> <span class="bold-text">Was sollte ich Ciber den Test wissen?</span></ion-card-subtitle>
-              </ion-card-header>
-              <ion-card-content>
-              <ion-row>
-                <ion-col size="10">
-                  <p>
-                    Seinen Hund vorsorglich vor WUrmern zu schutzen, gehort zu den wichtigsten RoutinemaBnahmen in der Tiergesundheit. Ein Hund wird durch unseren Test gleich auf mehrere Verschiedene Wurmer getestet... 
+                <ion-list lines="none" class="left-padding-3em card-list">
+                  <ion-item>
+                    <ion-card class="welcome-card">
+                      <ion-card-header>
+                        <ion-card-subtitle> 
+                          <span class="bold-text">Was musst man beim Sammeln beachten?</span>
+                        </ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-card-content>
+                      <ion-row>
+                        <ion-col size="10">
+                          <p>
+                            Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.
+                          </p>
+                        </ion-col>
+                        <ion-col size="2">
+                          <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                        </ion-col>
+                      </ion-row>
+                        <a class="link-color bold-text">mehr lesen</a>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-card class="welcome-card">
+                      <ion-card-header>
+                        <ion-card-subtitle> <span class="bold-text">Was sollte ich Ciber den Test wissen?</span></ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-card-content>
+                      <ion-row>
+                        <ion-col size="10">
+                          <p>
+                            Seinen Hund vorsorglich vor WUrmern zu schutzen, gehort zu den wichtigsten RoutinemaBnahmen in der Tiergesundheit. Ein Hund wird durch unseren Test gleich auf mehrere Verschiedene Wurmer getestet... 
+                          </p>
+                        </ion-col>
+                        <ion-col size="2">
+                          <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                        </ion-col>
+                      </ion-row>
+                        <a class="link-color bold-text">mehr lesen</a>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-item>
+                </ion-list>
+            </div>
+        </li>
+
+        <li class="icon check">
+            <input type="radio" id="radio-2" name="radio-accordion" />
+            <label for="radio-2">Probenbox im Labor</label>
+            <div class="content">
+                <div class="group left-padding-3em">
+                  <p class="">
+                    Die Probenbox <span class="bold-text">Box ID</span> ist bei uns im Labor angekommen. 
+                    We warden <span class="bold-text">worm. auf cwurm 2</span> und <span class="bold-text">worm 3</span>  testen. 
+                    Die Resultate wirst du in der Regel innerhalb der nbchsten zwei Tage erhalten. 
                   </p>
-                </ion-col>
-                <ion-col size="2">
-                  <ion-icon name="arrow-dropright" size="large"></ion-icon>
-                </ion-col>
-              </ion-row>
-                <a class="link-color bold-text">mehr lesen</a>
-              </ion-card-content>
-            </ion-card>
-          </ion-item>
-        </ion-list>
-      </ion-item>
+                </div>
 
+                <ion-list lines="none" class="select-list left-padding-3em">
+                  <p class="bold-text">
+                    Stimme die Behandlung auf <span class="bold-text">Pet name</span> ab
+                  </p>
+                </ion-list>
 
-      <ion-item class="timeline-event">
-        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
-        <ion-text>
-          <div class="timeline-event-copy">
-            <h4 class="timeline-event-thumbnail">Probenbox aktiviert</h4>
-            <p class="">
-              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
-              <span class="bold-text">Pet name</span> verknUpft. 
-              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
-            </p>
-          </div>
-        </ion-text>
-      </ion-item>
+                <div class="group left-padding-3em">
+                  <ion-row>
+                  <ion-col size="6">
+                    <ion-label position="stacked">Gewicht</ion-label>
+                    <ion-input class="form-input"  placeholder="Kg">
+                      <ion-icon slot="start" name="calendar" size="small"></ion-icon>
+                    </ion-input>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-label position="stacked">Geburstag</ion-label>
+                    <ion-input class="form-input" placeholder="tt/mm/jjjj">
+                      <ion-icon slot="start" name="basket" size="small"></ion-icon>
+                    </ion-input>
+                  </ion-col>
+                </ion-row>
 
-      <ion-item class="timeline-event">
-        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
-        <ion-text>
-          <div class="timeline-event-copy">
-            <h4 class="timeline-event-thumbnail">Results</h4>
-            <p class="">
-              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
-              <span class="bold-text">Pet name</span> verknUpft. 
-              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
-            </p>
-          </div>
-        </ion-text>
-      </ion-item>
+                <br>
+                <ion-button expand="block" class="primary-button">Hinterlegen</ion-button>
+                </div>
 
-      <ion-item class="timeline-event">
-        <ion-icon slot="start" name="checkmark" size="small" class="timeline-event-icon"></ion-icon>
-        <ion-text>
-          <div class="timeline-event-copy">
-            <h4 class="timeline-event-thumbnail">Treatment</h4>
-            <p class="">
-              Du hast die Probenbox <span class="bold-text">Box ID</span> erfoigreich aktiviert und mit 
-              <span class="bold-text">Pet name</span> verknUpft. 
-              In unserem Labor werden wir Pet name auf <span class="bold-text">wurm 1</span> und <span class="bold-text">wurm 2</span> testen. 
-            </p>
-          </div>
-        </ion-text>
-      </ion-item>
-    </ion-list>
+                <ion-list lines="none" class="card-list left-padding-3em">
+                    <ion-item>
+                      <ion-card class="welcome-card">
+                        <ion-card-header>
+                          <ion-card-subtitle> 
+                            <span class="bold-text">Was musst man beim Sammeln beachten?</span>
+                          </ion-card-subtitle>
+                        </ion-card-header>
+                        <ion-card-content>
+                        <ion-row>
+                          <ion-col size="10">
+                            <p>
+                              Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.
+                            </p>
+                          </ion-col>
+                          <ion-col size="2">
+                            <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                          </ion-col>
+                        </ion-row>
+                          <a class="link-color bold-text">mehr lesen</a>
+                        </ion-card-content>
+                      </ion-card>
+                    </ion-item>
 
-
-</ion-content>
+                    <ion-item>
+                      <ion-card class="welcome-card">
+                        <ion-card-header>
+                          <ion-card-subtitle> <span class="bold-text">Was sollte ich Ciber den Test wissen?</span></ion-card-subtitle>
+                        </ion-card-header>
+                        <ion-card-content>
+                        <ion-row>
+                          <ion-col size="10">
+                            <p>
+                              Seinen Hund vorsorglich vor WUrmern zu schutzen, gehort zu den wichtigsten RoutinemaBnahmen in der Tiergesundheit. Ein Hund wird durch unseren Test gleich auf mehrere Verschiedene Wurmer getestet... 
+                            </p>
+                          </ion-col>
+                          <ion-col size="2">
+                            <ion-icon name="arrow-dropright" size="large"></ion-icon>
+                          </ion-col>
+                        </ion-row>
+                          <a class="link-color bold-text">mehr lesen</a>
+                        </ion-card-content>
+                      </ion-card>
+                    </ion-item>
+                  </ion-list>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="radio-3" name="radio-accordion" />
+            <label for="radio-3">Resultate</label>
+            <div class="content">
+                <div class="group left-padding-3em">
+                  <h3>It can go on</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem. Pellentesque hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue neque nisi at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta diam.</p>
+                  <p>In ut est in orci commodo blandit. Cras rhoncus ultricies augue. Proin quam odio, venenatis ut tempus tristique, aliquet in velit. Pellentesque volutpat facilisis orci, ut congue mi rhoncus at. Nullam vehicula dignissim neque, sed rhoncus magna ultricies et.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

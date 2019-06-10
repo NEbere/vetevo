@@ -1,4 +1,188 @@
+$blue-1: #49b2ae;
+
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
+}
+
+/* Shared for all accordion types */
+.accordion {
+  font-family:Arial, Helvetica, sans-serif; 
+  margin:0 auto;
+  font-size:14px;
+  width:100%;
+  overflow-x: scroll;
+  
+  & ul {
+    list-style:none;
+  }
+
+  & ul, li {
+    margin:0;
+    padding:0;  
+  }
+
+  & label {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background: transparent;
+    color: #484848;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+  }
+
+  & .content {
+    padding:0 10px;
+    overflow:hidden;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+  }
+
+  & p {
+    color:#333;
+    margin:0 0 10px;
+  }
+  & h3 {
+    color: #484848;
+    padding:0;
+    margin:10px 0;
+  }
+}
+
+.accordion [type=radio], .accordion [type=checkbox] {
+  display:none;
+}
+
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+  background: transparent;
+}
+
+/* Vertical */
+.vertical {
+  & ul li {
+    overflow:hidden;
+    position: relative;
+    background: transparent;
+    &:before {
+      content: '';
+      height: 100%;
+      top: 0;
+      left: 21px;
+      display: block;
+      position: absolute;
+      border-left: solid thick #49b2ae;
+    }
+    &:after {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      position: absolute;
+      top: 5px;
+      left: 11px;
+      background: $blue-1;
+      border-radius: 50%;
+      color: white;
+      padding: 5px;
+    }
+  }
+
+  & ul li:first-of-type {
+    &:before {
+      top: 24px;
+    }
+  }
+}
+
+.vertical ul li label {
+  padding:10px;
+  cursor: pointer;
+  padding-left: 3.5em;
+}
+
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+  border-bottom:0;
+}
+
+.vertical ul li .content {
+  height:0px;
+  border-top:0;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+  height: calc(100vh - 208px);
+  overflow-y: scroll;
+}
+
+.heading-icon {
+  background-color: #49b2ae;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.star::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f005";
+}
+
+ion-button {
+  background-color: $blue-1;
+  --background: $blue-1;
+}
+
+
+.select-list:before, .card-list:before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ff3d80;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+  z-index: 10;
+}
+
+.card-list:before {
+  content: "\f0c9";
+  background: $blue-1;
+  color: white;
+  top: 28px;
+}
+
+ion-list .select-list {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: var(--ion-item-background,var(--ion-background-color,#fff));
+  position: relative;
+  background: transparent;
+  width: 100%;
+  display: block;
+  margin-left: -18px;
+  z-index: 1000;
+  padding-left: 4em;
+
+}
+
+ul li label{
+  padding-left: 3em;
 }
